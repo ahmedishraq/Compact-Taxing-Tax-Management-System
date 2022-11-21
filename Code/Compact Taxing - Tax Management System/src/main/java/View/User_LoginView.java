@@ -4,6 +4,9 @@
  */
 package View;
 
+import Controller.LoginController;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
@@ -303,7 +306,20 @@ public class User_LoginView extends javax.swing.JFrame {
     }//GEN-LAST:event_register2_BActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
-        // TODO add your handling code here:
+        try{
+            String id = username_TF.getText();
+            String password = password_PF.getText();
+            if(id == null || password == null){
+                JOptionPane.showMessageDialog(null,"Fill up the credentials");
+            }
+            else{
+                LoginController user = new LoginController();
+                user.login(id, password);
+            }
+        }
+        catch(Exception e){
+            
+        }
     }//GEN-LAST:event_login_BActionPerformed
 
     /**

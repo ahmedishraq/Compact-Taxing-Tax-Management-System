@@ -6,6 +6,8 @@ package Controller;
 
 import javax.swing.JOptionPane;
 import View.Home_PanelView;
+import View.User_LoginView;
+import java.awt.Frame;
 
 /**
  *
@@ -14,9 +16,9 @@ import View.Home_PanelView;
 public class LoginController {
     public boolean login(String id, String password){
         try{
-            if(id.equals(id) && password.equals(password)){
+            if(id.equals("ishraq") && password.equals("1234")){
                 JOptionPane.showMessageDialog(null, "Successfull Login");
-                Home_PanelView user = Home_Panel();
+                Home_PanelView user = new Home_PanelView();
                 user.setVisible(true);
             }
             else{
