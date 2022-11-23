@@ -52,6 +52,11 @@ public class User_LoginView extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                formMouseClicked(evt);
+            }
+        });
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -309,18 +314,23 @@ public class User_LoginView extends javax.swing.JFrame {
         try{
             String id = username_TF.getText();
             String password = password_PF.getText();
-            if(id == null || password == null){
+            if(id.equals("") || password.equals("")){
                 JOptionPane.showMessageDialog(null,"Fill up the credentials");
             }
             else{
                 LoginController user = new LoginController();
                 user.login(id, password);
+                setVisible(false);
             }
         }
         catch(Exception e){
             
         }
     }//GEN-LAST:event_login_BActionPerformed
+
+    private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formMouseClicked
 
     /**
      * @param args the command line arguments

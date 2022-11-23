@@ -7,7 +7,6 @@ package Controller;
 import javax.swing.JOptionPane;
 import View.Home_PanelView;
 import View.User_LoginView;
-import java.awt.Frame;
 
 /**
  *
@@ -23,6 +22,8 @@ public class LoginController {
             }
             else{
                 JOptionPane.showMessageDialog(null,"User ID or Password mismatch! Try again");
+                User_LoginView user = new User_LoginView();
+                user.setVisible(true);
             }
             return true;
         }
