@@ -5,6 +5,7 @@
 package View;
 
 import Controller.LoginController;
+import Controller.RegisterController;
 import javax.swing.JOptionPane;
 
 /**
@@ -307,7 +308,14 @@ public class User_LoginView extends javax.swing.JFrame {
     }//GEN-LAST:event_login2_BActionPerformed
 
     private void register2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register2_BActionPerformed
-        // TODO add your handling code here:
+        try{
+            RegisterController reg = new RegisterController();
+            reg.registrationPortal();
+            setVisible(false);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_register2_BActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
