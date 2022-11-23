@@ -36,7 +36,6 @@ public class User_LoginView extends javax.swing.JFrame {
         welcome_L = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        login2_B = new javax.swing.JButton();
         register2_B = new javax.swing.JButton();
         fp_B = new javax.swing.JButton();
         admin_B = new javax.swing.JButton();
@@ -94,14 +93,6 @@ public class User_LoginView extends javax.swing.JFrame {
             .addGap(0, 25, Short.MAX_VALUE)
         );
 
-        login2_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        login2_B.setText("Login");
-        login2_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                login2_BActionPerformed(evt);
-            }
-        });
-
         register2_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         register2_B.setText("Register");
         register2_B.addActionListener(new java.awt.event.ActionListener() {
@@ -115,16 +106,19 @@ public class User_LoginView extends javax.swing.JFrame {
 
         admin_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         admin_B.setText("Admin");
+        admin_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                admin_BActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap(388, Short.MAX_VALUE)
+                .addContainerGap(478, Short.MAX_VALUE)
                 .addComponent(admin_B)
-                .addGap(18, 18, 18)
-                .addComponent(login2_B)
                 .addGap(18, 18, 18)
                 .addComponent(register2_B)
                 .addGap(18, 18, 18)
@@ -136,7 +130,6 @@ public class User_LoginView extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(0, 52, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(login2_B)
                     .addComponent(register2_B)
                     .addComponent(fp_B)
                     .addComponent(admin_B)))
@@ -181,6 +174,11 @@ public class User_LoginView extends javax.swing.JFrame {
 
         register_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         register_B.setText("Register");
+        register_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                register_BActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -303,10 +301,6 @@ public class User_LoginView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_password_PFActionPerformed
 
-    private void login2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login2_BActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_login2_BActionPerformed
-
     private void register2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register2_BActionPerformed
         try{
             RegisterController reg = new RegisterController();
@@ -339,6 +333,21 @@ public class User_LoginView extends javax.swing.JFrame {
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_formMouseClicked
+
+    private void register_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_BActionPerformed
+          try{
+            RegisterController reg = new RegisterController();
+            reg.registrationPortal();
+            setVisible(false);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_register_BActionPerformed
+
+    private void admin_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_admin_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_admin_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -389,7 +398,6 @@ public class User_LoginView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton login2_B;
     private javax.swing.JButton login_B;
     private javax.swing.JLabel password_L;
     private javax.swing.JPasswordField password_PF;

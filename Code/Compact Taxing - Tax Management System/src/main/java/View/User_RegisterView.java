@@ -19,7 +19,7 @@ public class User_RegisterView extends javax.swing.JFrame {
     public User_RegisterView() {
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Home Panel");
+        setTitle("Registration Portal");
     }
 
     /**
@@ -202,7 +202,9 @@ public class User_RegisterView extends javax.swing.JFrame {
     }//GEN-LAST:event_password_PFActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
-        // TODO add your handling code here:
+        User_LoginView user = new User_LoginView();
+        setVisible(false);
+        user.setVisible(true);
     }//GEN-LAST:event_login_BActionPerformed
 
     private void register_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_BActionPerformed
