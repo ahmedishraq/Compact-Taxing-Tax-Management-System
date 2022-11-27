@@ -4,6 +4,8 @@
  */
 package View;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
@@ -16,6 +18,7 @@ public class User_HomeView extends javax.swing.JFrame {
     public User_HomeView() {
         initComponents();
         setLocationRelativeTo(null);
+        username_L.setText("Hi Ishraq,");
     }
 
     /**
@@ -40,6 +43,7 @@ public class User_HomeView extends javax.swing.JFrame {
         payment_B = new javax.swing.JButton();
         title2_L = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
+        username_L = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -153,6 +157,8 @@ public class User_HomeView extends javax.swing.JFrame {
         title2_L.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title2_L.setText("Welcome To Compact Taxing - A Tax Management System");
 
+        username_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -166,10 +172,15 @@ public class User_HomeView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(title2_L, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
-                            .addComponent(jSeparator2))
-                        .addGap(64, 64, 64))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(64, 64, 64))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(username_L)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(79, 79, 79))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,7 +194,9 @@ public class User_HomeView extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
-                        .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(username_L))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -201,7 +214,15 @@ public class User_HomeView extends javax.swing.JFrame {
     }//GEN-LAST:event_receipt_BActionPerformed
 
     private void logout_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_BActionPerformed
-        // TODO add your handling code here:
+        int rst = JOptionPane.showConfirmDialog(null, "Are you sure want to logout");
+        if (rst == 1 || rst == 2){
+            
+        }
+        else{
+            User_LoginView user = new User_LoginView();
+            setVisible(false);
+            user.setVisible(true);
+        }
     }//GEN-LAST:event_logout_BActionPerformed
 
     /**
@@ -253,5 +274,6 @@ public class User_HomeView extends javax.swing.JFrame {
     private javax.swing.JButton receipt_B;
     private javax.swing.JLabel title2_L;
     private javax.swing.JLabel title_L;
+    private javax.swing.JLabel username_L;
     // End of variables declaration//GEN-END:variables
 }
