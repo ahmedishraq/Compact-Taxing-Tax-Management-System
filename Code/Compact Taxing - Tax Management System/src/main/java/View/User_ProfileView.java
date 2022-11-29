@@ -38,9 +38,7 @@ public class User_ProfileView extends javax.swing.JFrame {
         home_B = new javax.swing.JButton();
         username_L = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25), new java.awt.Dimension(32767, 25));
-        jSeparator2 = new javax.swing.JSeparator();
         name_L = new javax.swing.JLabel();
-        name_TF = new javax.swing.JTextField();
         name_TF1 = new javax.swing.JTextField();
         name_TF2 = new javax.swing.JTextField();
         name_L1 = new javax.swing.JLabel();
@@ -58,20 +56,59 @@ public class User_ProfileView extends javax.swing.JFrame {
         ut10_TF = new javax.swing.JTextField();
         ut11_TF = new javax.swing.JTextField();
         ut12_TF = new javax.swing.JTextField();
-        ut7_TF1 = new javax.swing.JTextField();
-        ut8_TF1 = new javax.swing.JTextField();
-        ut9_TF1 = new javax.swing.JTextField();
-        ut10_TF1 = new javax.swing.JTextField();
-        ut11_TF1 = new javax.swing.JTextField();
-        ut12_TF1 = new javax.swing.JTextField();
-        ut1_TF1 = new javax.swing.JTextField();
-        ut2_TF1 = new javax.swing.JTextField();
-        ut3_TF1 = new javax.swing.JTextField();
-        ut4_TF1 = new javax.swing.JTextField();
-        ut5_TF1 = new javax.swing.JTextField();
-        ut6_TF1 = new javax.swing.JTextField();
+        t7_TF = new javax.swing.JTextField();
+        t8_TF = new javax.swing.JTextField();
+        t9_TF = new javax.swing.JTextField();
+        t10_TF = new javax.swing.JTextField();
+        t11_TF = new javax.swing.JTextField();
+        t12_TF = new javax.swing.JTextField();
+        t1_TF = new javax.swing.JTextField();
+        t2_TF = new javax.swing.JTextField();
+        t3_TF = new javax.swing.JTextField();
+        t4_TF = new javax.swing.JTextField();
+        t5_TF = new javax.swing.JTextField();
+        t6_TF = new javax.swing.JTextField();
+        cicrle_L = new javax.swing.JLabel();
+        tz_L = new javax.swing.JLabel();
+        ay_L = new javax.swing.JLabel();
+        circle_TF = new javax.swing.JTextField();
+        tz_TF = new javax.swing.JTextField();
+        ay_TF = new javax.swing.JTextField();
+        status_L = new javax.swing.JLabel();
+        rs_L = new javax.swing.JLabel();
+        r_CB = new javax.swing.JCheckBox();
+        nr_CB = new javax.swing.JCheckBox();
+        bus_L = new javax.swing.JLabel();
+        i_CB = new javax.swing.JCheckBox();
+        f_CB = new javax.swing.JCheckBox();
+        aof_CB = new javax.swing.JCheckBox();
+        huf_CB = new javax.swing.JCheckBox();
+        wife_L = new javax.swing.JLabel();
+        bus_TF = new javax.swing.JTextField();
+        wife_TF = new javax.swing.JTextField();
+        father_L = new javax.swing.JLabel();
+        father_TF = new javax.swing.JTextField();
+        mother_L = new javax.swing.JLabel();
+        mother_TF = new javax.swing.JTextField();
+        dob_L = new javax.swing.JLabel();
+        day_CBB = new javax.swing.JComboBox<>();
+        month_CBB = new javax.swing.JComboBox<>();
+        year_CBB = new javax.swing.JComboBox<>();
+        address_L = new javax.swing.JLabel();
+        pa_L = new javax.swing.JLabel();
+        pra_L = new javax.swing.JLabel();
+        pa_TF = new javax.swing.JTextField();
+        pra_TF = new javax.swing.JTextField();
+        tele_L = new javax.swing.JLabel();
+        tele_TF = new javax.swing.JTextField();
+        teler_L = new javax.swing.JLabel();
+        teler_TF = new javax.swing.JTextField();
+        teler_L1 = new javax.swing.JLabel();
+        name_TF3 = new javax.swing.JTextField();
+        submit_B = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(980, 990));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -100,29 +137,30 @@ public class User_ProfileView extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(profile_L)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(home_B)
-                .addGap(18, 18, 18)
-                .addComponent(logout_B)
-                .addGap(110, 110, 110))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSeparator1)
                 .addGap(91, 91, 91))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(153, 153, 153)
-                .addComponent(title_L, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(49, Short.MAX_VALUE)
+                        .addComponent(title_L, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(profile_L)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(home_B)
+                        .addGap(18, 18, 18)
+                        .addComponent(logout_B)))
+                .addGap(110, 110, 110))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(13, 13, 13)
                 .addComponent(title_L)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(profile_L)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -136,18 +174,8 @@ public class User_ProfileView extends javax.swing.JFrame {
         username_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         username_L.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
         name_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         name_L.setText("Name of the Assessee:");
-
-        name_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        name_TF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name_TFActionPerformed(evt);
-            }
-        });
 
         name_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         name_TF1.addActionListener(new java.awt.event.ActionListener() {
@@ -270,101 +298,270 @@ public class User_ProfileView extends javax.swing.JFrame {
             }
         });
 
-        ut7_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut7_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut7_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t7_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t7_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t7_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut7_TF1ActionPerformed(evt);
+                t7_TFActionPerformed(evt);
             }
         });
 
-        ut8_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut8_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut8_TF1.setText("-");
-        ut8_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t8_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t8_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t8_TF.setText("-");
+        t8_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut8_TF1ActionPerformed(evt);
+                t8_TFActionPerformed(evt);
             }
         });
 
-        ut9_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut9_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut9_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t9_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t9_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t9_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut9_TF1ActionPerformed(evt);
+                t9_TFActionPerformed(evt);
             }
         });
 
-        ut10_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut10_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut10_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t10_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t10_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t10_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut10_TF1ActionPerformed(evt);
+                t10_TFActionPerformed(evt);
             }
         });
 
-        ut11_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut11_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut11_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t11_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t11_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t11_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut11_TF1ActionPerformed(evt);
+                t11_TFActionPerformed(evt);
             }
         });
 
-        ut12_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut12_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut12_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t12_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t12_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t12_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut12_TF1ActionPerformed(evt);
+                t12_TFActionPerformed(evt);
             }
         });
 
-        ut1_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut1_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut1_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t1_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t1_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t1_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut1_TF1ActionPerformed(evt);
+                t1_TFActionPerformed(evt);
             }
         });
 
-        ut2_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut2_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut2_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t2_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t2_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t2_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut2_TF1ActionPerformed(evt);
+                t2_TFActionPerformed(evt);
             }
         });
 
-        ut3_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut3_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut3_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t3_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t3_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t3_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut3_TF1ActionPerformed(evt);
+                t3_TFActionPerformed(evt);
             }
         });
 
-        ut4_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut4_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut4_TF1.setText("-");
-        ut4_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t4_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t4_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t4_TF.setText("-");
+        t4_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut4_TF1ActionPerformed(evt);
+                t4_TFActionPerformed(evt);
             }
         });
 
-        ut5_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut5_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut5_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t5_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t5_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t5_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut5_TF1ActionPerformed(evt);
+                t5_TFActionPerformed(evt);
             }
         });
 
-        ut6_TF1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        ut6_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        ut6_TF1.addActionListener(new java.awt.event.ActionListener() {
+        t6_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        t6_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        t6_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ut6_TF1ActionPerformed(evt);
+                t6_TFActionPerformed(evt);
+            }
+        });
+
+        cicrle_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        cicrle_L.setText("Circle:");
+
+        tz_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        tz_L.setText("Taxes Zone:");
+
+        ay_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        ay_L.setText("Assessment Year:");
+
+        circle_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        circle_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                circle_TFActionPerformed(evt);
+            }
+        });
+
+        tz_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        tz_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tz_TFActionPerformed(evt);
+            }
+        });
+
+        ay_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        ay_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ay_TFActionPerformed(evt);
+            }
+        });
+
+        status_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        status_L.setText("Status:");
+
+        rs_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        rs_L.setText("Residential Status:");
+
+        r_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        r_CB.setText("Resident");
+
+        nr_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        nr_CB.setText("Non-ressident");
+
+        bus_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        bus_L.setText("Name of the employer/business (where applicable):");
+
+        i_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        i_CB.setText("Individual");
+
+        f_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        f_CB.setText("Firm");
+
+        aof_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        aof_CB.setText("Association of Persons");
+
+        huf_CB.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        huf_CB.setText("Hindu Undivided Family");
+
+        wife_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        wife_L.setText("Wife/Husbands Name (if assessee, please mention TIN):");
+
+        bus_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        bus_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bus_TFActionPerformed(evt);
+            }
+        });
+
+        wife_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        wife_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wife_TFActionPerformed(evt);
+            }
+        });
+
+        father_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        father_L.setText("Father's Name:");
+
+        father_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        father_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                father_TFActionPerformed(evt);
+            }
+        });
+
+        mother_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        mother_L.setText("Mother's Name:");
+
+        mother_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        mother_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mother_TFActionPerformed(evt);
+            }
+        });
+
+        dob_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        dob_L.setText("Date of Birth (in case of individual):");
+
+        day_CBB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        day_CBB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day_CBBActionPerformed(evt);
+            }
+        });
+
+        month_CBB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month", "January", "February ", "March", "April ", "May", "June ", "July", "August", "September", "October", "November", "December" }));
+
+        year_CBB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year", "1940", "1941", "1942", "1943", "1944", "1945", "1946", "1947", "1948", "1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023" }));
+
+        address_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        address_L.setText("Address:");
+
+        pa_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        pa_L.setText("(a) Present:");
+
+        pra_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        pra_L.setText("(b) Permanent:");
+
+        pa_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        pa_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pa_TFActionPerformed(evt);
+            }
+        });
+
+        pra_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        pra_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pra_TFActionPerformed(evt);
+            }
+        });
+
+        tele_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        tele_L.setText("Telephone: Office/Business");
+
+        tele_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        tele_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tele_TFActionPerformed(evt);
+            }
+        });
+
+        teler_L.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        teler_L.setText("Telephone: Resedential");
+
+        teler_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        teler_TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                teler_TFActionPerformed(evt);
+            }
+        });
+
+        teler_L1.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        teler_L1.setText("VAT Registration Number (if any):");
+
+        name_TF3.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        name_TF3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                name_TF3ActionPerformed(evt);
+            }
+        });
+
+        submit_B.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        submit_B.setText("Submit");
+        submit_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submit_BActionPerformed(evt);
             }
         });
 
@@ -380,74 +577,151 @@ public class User_ProfileView extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(445, 445, 445)
                                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(name_L1)
-                                    .addComponent(name_L)
-                                    .addComponent(utin_L, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(tin_L, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(name_TF1)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(ut1_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut2_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut3_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut4_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut5_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut6_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut7_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut8_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut9_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut10_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut11_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut12_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(name_TF2, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(45, 45, 45)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(ut1_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(name_L1)
+                                                    .addComponent(name_L)
+                                                    .addComponent(utin_L, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(tin_L, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ay_L, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(cicrle_L, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(62, 62, 62)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(ut1_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut2_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut3_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut4_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut5_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut6_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut7_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut8_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut9_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut10_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut11_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(ut12_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(ay_TF, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(t1_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(t2_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(t3_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(circle_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(t4_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(t5_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t6_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t7_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                            .addComponent(tz_L))
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(tz_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(t8_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t9_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t10_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t11_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(t12_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(rs_L)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(r_CB)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(nr_CB))))
+                                            .addComponent(name_TF2)
+                                            .addComponent(name_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(status_L, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(93, 93, 93)
+                                        .addComponent(i_CB)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut2_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(f_CB)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut3_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(aof_CB)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut4_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(huf_CB))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(dob_L)
+                                        .addGap(36, 36, 36)
+                                        .addComponent(day_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(61, 61, 61)
+                                        .addComponent(month_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(43, 43, 43)
+                                        .addComponent(year_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(bus_L)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut5_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(bus_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(wife_L)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut6_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut7_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut8_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut9_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut10_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut11_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ut12_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(18, 18, 18)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 181, Short.MAX_VALUE)
-                        .addComponent(name_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(78, 78, 78))))
+                                        .addComponent(wife_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(father_L)
+                                            .addComponent(mother_L))
+                                        .addGap(53, 53, 53)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(father_TF)
+                                            .addComponent(mother_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(submit_B)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(address_L)
+                                                    .addGap(32, 32, 32)
+                                                    .addComponent(pa_L))
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(83, 83, 83)
+                                                    .addComponent(pra_L))
+                                                .addComponent(tele_L)
+                                                .addComponent(teler_L)
+                                                .addComponent(teler_L1))
+                                            .addGap(40, 40, 40)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(teler_TF, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(tele_TF, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(pra_TF, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(pa_TF)
+                                                .addComponent(name_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -456,7 +730,10 @@ public class User_ProfileView extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
+                        .addGap(610, 610, 610)
+                        .addComponent(username_L))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(name_L)
                             .addComponent(name_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -481,30 +758,91 @@ public class User_ProfileView extends javax.swing.JFrame {
                             .addComponent(ut12_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ut1_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut2_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut3_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut4_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut5_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut6_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut7_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut8_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut9_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut10_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut11_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ut12_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t1_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t2_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t3_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t4_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t5_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t6_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t7_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t8_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t9_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t10_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t11_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(t12_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tin_L))
-                        .addGap(247, 247, 247)
-                        .addComponent(username_L)
-                        .addGap(102, 102, 102)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(name_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(76, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cicrle_L)
+                            .addComponent(tz_L)
+                            .addComponent(circle_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tz_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ay_L)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(ay_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(rs_L)
+                                    .addComponent(r_CB)
+                                    .addComponent(nr_CB))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(i_CB)
+                                    .addComponent(f_CB)
+                                    .addComponent(aof_CB)
+                                    .addComponent(huf_CB)
+                                    .addComponent(status_L))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(bus_L)
+                            .addComponent(bus_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(wife_L)
+                            .addComponent(wife_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(father_L)
+                            .addComponent(father_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(mother_L)
+                            .addComponent(mother_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dob_L)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(day_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(month_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(year_CBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(pa_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(pa_L)
+                                    .addComponent(address_L))
+                                .addGap(30, 30, 30)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(pra_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(pra_L))))
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tele_L)
+                            .addComponent(tele_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(teler_L)
+                            .addComponent(teler_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(teler_L1)
+                            .addComponent(name_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(36, 36, 36)
+                .addComponent(submit_B)
+                .addGap(21, 21, 21)
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -525,10 +863,6 @@ public class User_ProfileView extends javax.swing.JFrame {
     private void home_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_home_BActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_home_BActionPerformed
-
-    private void name_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name_TFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_name_TFActionPerformed
 
     private void name_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name_TF1ActionPerformed
         // TODO add your handling code here:
@@ -586,53 +920,109 @@ public class User_ProfileView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ut12_TFActionPerformed
 
-    private void ut7_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut7_TF1ActionPerformed
+    private void t7_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t7_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut7_TF1ActionPerformed
+    }//GEN-LAST:event_t7_TFActionPerformed
 
-    private void ut8_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut8_TF1ActionPerformed
+    private void t8_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t8_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut8_TF1ActionPerformed
+    }//GEN-LAST:event_t8_TFActionPerformed
 
-    private void ut9_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut9_TF1ActionPerformed
+    private void t9_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t9_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut9_TF1ActionPerformed
+    }//GEN-LAST:event_t9_TFActionPerformed
 
-    private void ut10_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut10_TF1ActionPerformed
+    private void t10_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t10_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut10_TF1ActionPerformed
+    }//GEN-LAST:event_t10_TFActionPerformed
 
-    private void ut11_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut11_TF1ActionPerformed
+    private void t11_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t11_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut11_TF1ActionPerformed
+    }//GEN-LAST:event_t11_TFActionPerformed
 
-    private void ut12_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut12_TF1ActionPerformed
+    private void t12_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t12_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut12_TF1ActionPerformed
+    }//GEN-LAST:event_t12_TFActionPerformed
 
-    private void ut1_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut1_TF1ActionPerformed
+    private void t1_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut1_TF1ActionPerformed
+    }//GEN-LAST:event_t1_TFActionPerformed
 
-    private void ut2_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut2_TF1ActionPerformed
+    private void t2_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t2_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut2_TF1ActionPerformed
+    }//GEN-LAST:event_t2_TFActionPerformed
 
-    private void ut3_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut3_TF1ActionPerformed
+    private void t3_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t3_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut3_TF1ActionPerformed
+    }//GEN-LAST:event_t3_TFActionPerformed
 
-    private void ut4_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut4_TF1ActionPerformed
+    private void t4_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t4_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut4_TF1ActionPerformed
+    }//GEN-LAST:event_t4_TFActionPerformed
 
-    private void ut5_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut5_TF1ActionPerformed
+    private void t5_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t5_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut5_TF1ActionPerformed
+    }//GEN-LAST:event_t5_TFActionPerformed
 
-    private void ut6_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut6_TF1ActionPerformed
+    private void t6_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t6_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ut6_TF1ActionPerformed
+    }//GEN-LAST:event_t6_TFActionPerformed
+
+    private void circle_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_circle_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_circle_TFActionPerformed
+
+    private void tz_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tz_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tz_TFActionPerformed
+
+    private void ay_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ay_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ay_TFActionPerformed
+
+    private void bus_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bus_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bus_TFActionPerformed
+
+    private void wife_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wife_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_wife_TFActionPerformed
+
+    private void father_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_father_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_father_TFActionPerformed
+
+    private void mother_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mother_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mother_TFActionPerformed
+
+    private void day_CBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day_CBBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_day_CBBActionPerformed
+
+    private void pa_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pa_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pa_TFActionPerformed
+
+    private void pra_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pra_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pra_TFActionPerformed
+
+    private void tele_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tele_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tele_TFActionPerformed
+
+    private void teler_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teler_TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_teler_TFActionPerformed
+
+    private void name_TF3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name_TF3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_name_TF3ActionPerformed
+
+    private void submit_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submit_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -671,45 +1061,81 @@ public class User_ProfileView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel address_L;
+    private javax.swing.JCheckBox aof_CB;
+    private javax.swing.JLabel ay_L;
+    private javax.swing.JTextField ay_TF;
+    private javax.swing.JLabel bus_L;
+    private javax.swing.JTextField bus_TF;
+    private javax.swing.JLabel cicrle_L;
+    private javax.swing.JTextField circle_TF;
+    private javax.swing.JComboBox<String> day_CBB;
+    private javax.swing.JLabel dob_L;
+    private javax.swing.JCheckBox f_CB;
+    private javax.swing.JLabel father_L;
+    private javax.swing.JTextField father_TF;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton home_B;
+    private javax.swing.JCheckBox huf_CB;
+    private javax.swing.JCheckBox i_CB;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton logout_B;
+    private javax.swing.JComboBox<String> month_CBB;
+    private javax.swing.JLabel mother_L;
+    private javax.swing.JTextField mother_TF;
     private javax.swing.JLabel name_L;
     private javax.swing.JLabel name_L1;
-    private javax.swing.JTextField name_TF;
     private javax.swing.JTextField name_TF1;
     private javax.swing.JTextField name_TF2;
+    private javax.swing.JTextField name_TF3;
+    private javax.swing.JCheckBox nr_CB;
+    private javax.swing.JLabel pa_L;
+    private javax.swing.JTextField pa_TF;
+    private javax.swing.JLabel pra_L;
+    private javax.swing.JTextField pra_TF;
     private javax.swing.JLabel profile_L;
+    private javax.swing.JCheckBox r_CB;
+    private javax.swing.JLabel rs_L;
+    private javax.swing.JLabel status_L;
+    private javax.swing.JButton submit_B;
+    private javax.swing.JTextField t10_TF;
+    private javax.swing.JTextField t11_TF;
+    private javax.swing.JTextField t12_TF;
+    private javax.swing.JTextField t1_TF;
+    private javax.swing.JTextField t2_TF;
+    private javax.swing.JTextField t3_TF;
+    private javax.swing.JTextField t4_TF;
+    private javax.swing.JTextField t5_TF;
+    private javax.swing.JTextField t6_TF;
+    private javax.swing.JTextField t7_TF;
+    private javax.swing.JTextField t8_TF;
+    private javax.swing.JTextField t9_TF;
+    private javax.swing.JLabel tele_L;
+    private javax.swing.JTextField tele_TF;
+    private javax.swing.JLabel teler_L;
+    private javax.swing.JLabel teler_L1;
+    private javax.swing.JTextField teler_TF;
     private javax.swing.JLabel tin_L;
     private javax.swing.JLabel title_L;
+    private javax.swing.JLabel tz_L;
+    private javax.swing.JTextField tz_TF;
     private javax.swing.JLabel username_L;
     private javax.swing.JTextField ut10_TF;
-    private javax.swing.JTextField ut10_TF1;
     private javax.swing.JTextField ut11_TF;
-    private javax.swing.JTextField ut11_TF1;
     private javax.swing.JTextField ut12_TF;
-    private javax.swing.JTextField ut12_TF1;
     private javax.swing.JTextField ut1_TF;
-    private javax.swing.JTextField ut1_TF1;
     private javax.swing.JTextField ut2_TF;
-    private javax.swing.JTextField ut2_TF1;
     private javax.swing.JTextField ut3_TF;
-    private javax.swing.JTextField ut3_TF1;
     private javax.swing.JTextField ut4_TF;
-    private javax.swing.JTextField ut4_TF1;
     private javax.swing.JTextField ut5_TF;
-    private javax.swing.JTextField ut5_TF1;
     private javax.swing.JTextField ut6_TF;
-    private javax.swing.JTextField ut6_TF1;
     private javax.swing.JTextField ut7_TF;
-    private javax.swing.JTextField ut7_TF1;
     private javax.swing.JTextField ut8_TF;
-    private javax.swing.JTextField ut8_TF1;
     private javax.swing.JTextField ut9_TF;
-    private javax.swing.JTextField ut9_TF1;
     private javax.swing.JLabel utin_L;
+    private javax.swing.JLabel wife_L;
+    private javax.swing.JTextField wife_TF;
+    private javax.swing.JComboBox<String> year_CBB;
     // End of variables declaration//GEN-END:variables
 }
