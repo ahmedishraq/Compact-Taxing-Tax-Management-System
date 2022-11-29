@@ -4,16 +4,10 @@
  */
 package Controller;
 
-import View.User_ProfileView;
-
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class HomeController {
-    public boolean open(){
-        User_ProfileView profile = new User_ProfileView();
-        profile.setVisible(true);
-        return true;
-    }
+public class ProfileController {
+    
 }
