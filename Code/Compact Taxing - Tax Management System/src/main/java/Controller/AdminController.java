@@ -4,6 +4,7 @@
  */
 package Controller;
 
+import View.Admin_HomeView;
 import View.Admin_LoginView;
 import View.User_HomeView;
 import View.User_LoginView;
@@ -23,10 +24,10 @@ public class AdminController {
 
     public boolean login(String id, String password) {
         try {
-            if (id.equals("ishraq") && password.equals("1234")) {
+            if (id.equals("admin") && password.equals("1234")) {
                 JOptionPane.showMessageDialog(null, "Successfull Login");
-                User_HomeView user = new User_HomeView();
-                user.setVisible(true);
+                Admin_HomeView admin = new Admin_HomeView();
+                admin.setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "User ID or Password mismatch! Try again");
                 Admin_LoginView admin = new Admin_LoginView();

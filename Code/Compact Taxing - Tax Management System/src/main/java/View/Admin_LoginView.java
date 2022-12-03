@@ -314,20 +314,18 @@ public class Admin_LoginView extends javax.swing.JFrame {
     }//GEN-LAST:event_register2_BActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
-        try{
+        try {
             String id = username_TF.getText();
             String password = password_PF.getText();
-            if(id.equals("") || password.equals("")){
-                JOptionPane.showMessageDialog(null,"Fill up the credentials");
-            }
-            else{
+            if (id.equals("") || password.equals("")) {
+                JOptionPane.showMessageDialog(null, "Fill up the credentials");
+            } else {
                 AdminController admin = new AdminController();
                 admin.login(id, password);
                 setVisible(false);
             }
-        }
-        catch(Exception e){
-            
+        } catch (Exception e) {
+
         }
     }//GEN-LAST:event_login_BActionPerformed
 
