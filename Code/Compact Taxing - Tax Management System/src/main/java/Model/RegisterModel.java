@@ -8,6 +8,6 @@ package Model;
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class StartModel {
+public class RegisterModel {
     
 }
