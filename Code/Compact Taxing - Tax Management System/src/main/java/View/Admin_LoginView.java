@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class User_LoginView extends javax.swing.JFrame {
+public class Admin_LoginView extends javax.swing.JFrame {
 
     /**
      * Creates new form GUI
      */
-    public User_LoginView() {
+    public Admin_LoginView() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Login");
@@ -39,7 +39,7 @@ public class User_LoginView extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         register2_B = new javax.swing.JButton();
         fp_B = new javax.swing.JButton();
-        admin_B = new javax.swing.JButton();
+        user_B = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         javax.swing.JLabel userid_L = new javax.swing.JLabel();
         password_L = new javax.swing.JLabel();
@@ -49,7 +49,7 @@ public class User_LoginView extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         dont_L = new javax.swing.JLabel();
         register_B = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        adminlogin_L = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -105,11 +105,11 @@ public class User_LoginView extends javax.swing.JFrame {
         fp_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         fp_B.setText("Forgot Password");
 
-        admin_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        admin_B.setText("Admin");
-        admin_B.addActionListener(new java.awt.event.ActionListener() {
+        user_B.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        user_B.setText("User");
+        user_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                admin_BActionPerformed(evt);
+                user_BActionPerformed(evt);
             }
         });
 
@@ -119,7 +119,7 @@ public class User_LoginView extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap(478, Short.MAX_VALUE)
-                .addComponent(admin_B)
+                .addComponent(user_B)
                 .addGap(18, 18, 18)
                 .addComponent(register2_B)
                 .addGap(18, 18, 18)
@@ -133,7 +133,7 @@ public class User_LoginView extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(register2_B)
                     .addComponent(fp_B)
-                    .addComponent(admin_B)))
+                    .addComponent(user_B)))
         );
 
         jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -202,8 +202,8 @@ public class User_LoginView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel1.setText("User Login");
+        adminlogin_L.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
+        adminlogin_L.setText("Admin Login");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -234,13 +234,13 @@ public class User_LoginView extends javax.swing.JFrame {
                 .addGap(173, 173, 173))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jLabel1)
+                .addComponent(adminlogin_L)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(adminlogin_L, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(68, 68, 68)
@@ -303,28 +303,31 @@ public class User_LoginView extends javax.swing.JFrame {
     }//GEN-LAST:event_password_PFActionPerformed
 
     private void register2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register2_BActionPerformed
-        try {
+        try{
             RegisterController reg = new RegisterController();
             reg.registrationPortal();
             setVisible(false);
-        } catch (Exception e) {
+        }
+        catch(Exception e){
             e.printStackTrace();
         }
     }//GEN-LAST:event_register2_BActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
-        try {
+        try{
             String id = username_TF.getText();
             String password = password_PF.getText();
-            if (id.equals("") || password.equals("")) {
-                JOptionPane.showMessageDialog(null, "Fill up the credentials");
-            } else {
-                LoginController user = new LoginController();
-                user.login(id, password);
+            if(id.equals("") || password.equals("")){
+                JOptionPane.showMessageDialog(null,"Fill up the credentials");
+            }
+            else{
+                AdminController admin = new AdminController();
+                admin.login(id, password);
                 setVisible(false);
             }
-        } catch (Exception e) {
-
+        }
+        catch(Exception e){
+            
         }
     }//GEN-LAST:event_login_BActionPerformed
 
@@ -333,25 +336,28 @@ public class User_LoginView extends javax.swing.JFrame {
     }//GEN-LAST:event_formMouseClicked
 
     private void register_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_BActionPerformed
-        try {
+          try{
             RegisterController reg = new RegisterController();
             reg.registrationPortal();
             setVisible(false);
-        } catch (Exception e) {
+        }
+        catch(Exception e){
             e.printStackTrace();
         }
     }//GEN-LAST:event_register_BActionPerformed
 
-    private void admin_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_admin_BActionPerformed
+    private void user_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_user_BActionPerformed
         // TODO add your handling code here:
-        try {
-            AdminController admin = new AdminController();
-            admin.adminPortal();
+        try{
+            LoginController user = new LoginController();
+            user.userPortal();
             setVisible(false);
-        } catch (Exception e) {
+        }
+        catch(Exception e){
             e.printStackTrace();
         }
-    }//GEN-LAST:event_admin_BActionPerformed
+        
+    }//GEN-LAST:event_user_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -370,14 +376,18 @@ public class User_LoginView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(User_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Admin_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(User_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Admin_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(User_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Admin_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(User_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Admin_LoginView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -386,16 +396,15 @@ public class User_LoginView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new User_LoginView().setVisible(true);
+                new Admin_LoginView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton admin_B;
+    private javax.swing.JLabel adminlogin_L;
     private javax.swing.JLabel dont_L;
     private javax.swing.JButton fp_B;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -407,6 +416,7 @@ public class User_LoginView extends javax.swing.JFrame {
     private javax.swing.JPasswordField password_PF;
     private javax.swing.JButton register2_B;
     private javax.swing.JButton register_B;
+    private javax.swing.JButton user_B;
     private javax.swing.JTextField username_TF;
     private javax.swing.JLabel welcome_L;
     // End of variables declaration//GEN-END:variables

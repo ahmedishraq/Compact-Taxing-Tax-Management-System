@@ -4,6 +4,7 @@
  */
 package View;
 
+import Controller.ProfileController;
 import javax.swing.JOptionPane;
 
 /**
@@ -40,7 +41,7 @@ public class User_ProfileView extends javax.swing.JFrame {
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25), new java.awt.Dimension(32767, 25));
         name_L = new javax.swing.JLabel();
         name_TF1 = new javax.swing.JTextField();
-        name_TF2 = new javax.swing.JTextField();
+        id_TF = new javax.swing.JTextField();
         name_L1 = new javax.swing.JLabel();
         utin_L = new javax.swing.JLabel();
         ut1_TF = new javax.swing.JTextField();
@@ -184,10 +185,10 @@ public class User_ProfileView extends javax.swing.JFrame {
             }
         });
 
-        name_TF2.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        name_TF2.addActionListener(new java.awt.event.ActionListener() {
+        id_TF.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        id_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name_TF2ActionPerformed(evt);
+                id_TFActionPerformed(evt);
             }
         });
 
@@ -664,7 +665,7 @@ public class User_ProfileView extends javax.swing.JFrame {
                                                         .addComponent(r_CB)
                                                         .addGap(18, 18, 18)
                                                         .addComponent(nr_CB))))
-                                            .addComponent(name_TF2)
+                                            .addComponent(id_TF)
                                             .addComponent(name_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(status_L, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -739,7 +740,7 @@ public class User_ProfileView extends javax.swing.JFrame {
                             .addComponent(name_TF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(name_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(name_L1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -862,15 +863,16 @@ public class User_ProfileView extends javax.swing.JFrame {
 
     private void home_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_home_BActionPerformed
         // TODO add your handling code here:
+        setVisible(false);
     }//GEN-LAST:event_home_BActionPerformed
 
     private void name_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name_TF1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_name_TF1ActionPerformed
 
-    private void name_TF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name_TF2ActionPerformed
+    private void id_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_TFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_name_TF2ActionPerformed
+    }//GEN-LAST:event_id_TFActionPerformed
 
     private void ut1_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ut1_TFActionPerformed
         // TODO add your handling code here:
@@ -1022,6 +1024,14 @@ public class User_ProfileView extends javax.swing.JFrame {
 
     private void submit_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit_BActionPerformed
         // TODO add your handling code here:
+        try{
+            ProfileController profupdate = new ProfileController();
+            profupdate.updateProfile();
+            setVisible(false);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_submit_BActionPerformed
 
     /**
@@ -1078,6 +1088,7 @@ public class User_ProfileView extends javax.swing.JFrame {
     private javax.swing.JButton home_B;
     private javax.swing.JCheckBox huf_CB;
     private javax.swing.JCheckBox i_CB;
+    private javax.swing.JTextField id_TF;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton logout_B;
@@ -1087,7 +1098,6 @@ public class User_ProfileView extends javax.swing.JFrame {
     private javax.swing.JLabel name_L;
     private javax.swing.JLabel name_L1;
     private javax.swing.JTextField name_TF1;
-    private javax.swing.JTextField name_TF2;
     private javax.swing.JTextField name_TF3;
     private javax.swing.JCheckBox nr_CB;
     private javax.swing.JLabel pa_L;

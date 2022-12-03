@@ -21,7 +21,7 @@ public class RegisterController {
     
     public boolean register(String email, String id, String password){
         try{
-            System.out.println("email: "+email+" "+"User ID:"+id+" Password: "+password);
+            //System.out.println("email: "+email+" "+"User ID:"+id+" Password: "+password);
             User_LoginView user = new User_LoginView();
             user.setVisible(true);
         }

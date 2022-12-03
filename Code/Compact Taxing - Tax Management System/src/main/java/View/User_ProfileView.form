@@ -138,7 +138,7 @@
                                                   </Group>
                                               </Group>
                                           </Group>
-                                          <Component id="name_TF2" max="32767" attributes="0"/>
+                                          <Component id="id_TF" max="32767" attributes="0"/>
                                           <Component id="name_TF1" alignment="0" min="-2" pref="447" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -237,7 +237,7 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="name_TF2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="id_TF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="name_L1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -504,14 +504,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="name_TF1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="name_TF2">
+    <Component class="javax.swing.JTextField" name="id_TF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="name_TF2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="id_TFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="name_L1">

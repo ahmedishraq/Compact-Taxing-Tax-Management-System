@@ -4,10 +4,15 @@
  */
 package Controller;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
 public class ProfileController {
     
+    public void updateProfile(){
+        JOptionPane.showMessageDialog(null,"Profile Updated Successfully!");
+    }
 }

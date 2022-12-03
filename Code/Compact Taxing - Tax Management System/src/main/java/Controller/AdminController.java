@@ -4,41 +4,39 @@
  */
 package Controller;
 
+import View.Admin_LoginView;
 import View.User_HomeView;
-import javax.swing.JOptionPane;
-import View.User_RegisterView;
 import View.User_LoginView;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class LoginController {
+public class AdminController {
     
-    public boolean userPortal(){
-        User_LoginView user = new User_LoginView();
-        user.setVisible(true);
+    public boolean adminPortal(){
+        Admin_LoginView admin = new Admin_LoginView();
+        admin.setVisible(true);
         return true;
     }
-    
-    public boolean login(String id, String password){
-        try{
-            if(id.equals("ishraq") && password.equals("1234")){
+
+    public boolean login(String id, String password) {
+        try {
+            if (id.equals("ishraq") && password.equals("1234")) {
                 JOptionPane.showMessageDialog(null, "Successfull Login");
                 User_HomeView user = new User_HomeView();
                 user.setVisible(true);
-            }
-            else{
-                JOptionPane.showMessageDialog(null,"User ID or Password mismatch! Try again");
-                User_LoginView user = new User_LoginView();
-                user.setVisible(true);
+            } else {
+                JOptionPane.showMessageDialog(null, "User ID or Password mismatch! Try again");
+                Admin_LoginView admin = new Admin_LoginView();
+                admin.setVisible(true);
             }
             return true;
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return false;
     }
-    
+
 }

@@ -210,7 +210,7 @@ public class User_HomeView extends javax.swing.JFrame {
         // TODO add your handling code here:
         HomeController profile = new HomeController();
         profile.open();
-        setVisible(false);
+        //setVisible(false);
     }//GEN-LAST:event_myprofile_BActionPerformed
 
     private void receipt_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_receipt_BActionPerformed
