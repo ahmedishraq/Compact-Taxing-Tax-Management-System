@@ -5,6 +5,7 @@
 package Controller;
 
 import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
@@ -12,11 +13,16 @@ import org.junit.Test;
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
 public class LoginControllerTest {
-    
+
     @Test
-    public void loginSuccessfull(){
-        LoginController login = new LoginController();
-        Assert.assertEquals(4, login.test(2,2));
+    public void loginSuccessfull() {
+        System.out.println("Login Protal Testing");
+        final String id = "ishraq";
+        final String pass = "12345";
+        LoginController loginTest = new LoginController();
+        boolean expResult = true;
+        boolean result = loginTest.login(id,pass);
+        assertEquals(expResult, result);
     }
-    
+
 }
