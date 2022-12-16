@@ -41,8 +41,4 @@ public class LoginController {
         return false;
     }
     
-    public int test(int a, int b){
-        return a + b;
-    }
-    
 }
