@@ -4,7 +4,8 @@
  */
 package View;
 
-import Controller.HomeController;
+import Controller.AdminTaxCalculationController1;
+import Controller.UserHomeController;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,7 +39,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         logout_B = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        myprofile_B = new javax.swing.JButton();
+        calulation_B = new javax.swing.JButton();
         mydoc_B = new javax.swing.JButton();
         appoinment_B = new javax.swing.JButton();
         receipt_B = new javax.swing.JButton();
@@ -99,11 +100,11 @@ public class Admin_HomeView extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        myprofile_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        myprofile_B.setText("Users Profile");
-        myprofile_B.addActionListener(new java.awt.event.ActionListener() {
+        calulation_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        calulation_B.setText("Tax Calculation");
+        calulation_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                myprofile_BActionPerformed(evt);
+                calulation_BActionPerformed(evt);
             }
         });
 
@@ -132,7 +133,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(payment_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(myprofile_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(calulation_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(mydoc_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(appoinment_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(receipt_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -142,7 +143,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(67, 67, 67)
-                .addComponent(myprofile_B, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(calulation_B, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(64, 64, 64)
                 .addComponent(mydoc_B, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
@@ -205,12 +206,11 @@ public class Admin_HomeView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void myprofile_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myprofile_BActionPerformed
+    private void calulation_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calulation_BActionPerformed
         // TODO add your handling code here:
-        HomeController profile = new HomeController();
-        profile.open();
-        //setVisible(false);
-    }//GEN-LAST:event_myprofile_BActionPerformed
+        AdminTaxCalculationController1 tc = new AdminTaxCalculationController1();
+        tc.open();
+    }//GEN-LAST:event_calulation_BActionPerformed
 
     private void receipt_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_receipt_BActionPerformed
         // TODO add your handling code here:
@@ -266,6 +266,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton appoinment_B;
+    private javax.swing.JButton calulation_B;
     private javax.swing.JLabel home_L;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -273,7 +274,6 @@ public class Admin_HomeView extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton logout_B;
     private javax.swing.JButton mydoc_B;
-    private javax.swing.JButton myprofile_B;
     private javax.swing.JButton payment_B;
     private javax.swing.JButton receipt_B;
     private javax.swing.JLabel title2_L;

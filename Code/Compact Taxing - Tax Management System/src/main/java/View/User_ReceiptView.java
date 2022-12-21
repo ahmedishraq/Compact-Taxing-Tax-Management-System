@@ -4,7 +4,7 @@
  */
 package View;
 
-import Controller.HomeController;
+import Controller.UserHomeController;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -50,7 +50,7 @@ public class User_ReceiptView extends javax.swing.JFrame {
         username_L = new javax.swing.JLabel();
         d_L = new javax.swing.JLabel();
         download_B = new javax.swing.JButton();
-        d_L1 = new javax.swing.JLabel();
+        d_L2 = new javax.swing.JLabel();
         download_B1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -182,9 +182,14 @@ public class User_ReceiptView extends javax.swing.JFrame {
 
         download_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         download_B.setText("Download");
+        download_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                download_BActionPerformed(evt);
+            }
+        });
 
-        d_L1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        d_L1.setText("Acknowledgement Receipt");
+        d_L2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        d_L2.setText("Acknowledgement Receipt");
 
         download_B1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         download_B1.setText("Download");
@@ -221,7 +226,7 @@ public class User_ReceiptView extends javax.swing.JFrame {
                                         .addComponent(download_B)
                                         .addGap(171, 171, 171))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(d_L1)
+                                        .addComponent(d_L2)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(download_B1)
                                         .addGap(171, 171, 171))))))))
@@ -249,7 +254,7 @@ public class User_ReceiptView extends javax.swing.JFrame {
                             .addComponent(download_B))
                         .addGap(128, 128, 128)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(d_L1)
+                            .addComponent(d_L2)
                             .addComponent(download_B1))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
@@ -259,7 +264,7 @@ public class User_ReceiptView extends javax.swing.JFrame {
 
     private void myprofile_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myprofile_BActionPerformed
         // TODO add your handling code here:
-        HomeController profile = new HomeController();
+        UserHomeController profile = new UserHomeController();
         profile.open();
         //setVisible(false);
     }//GEN-LAST:event_myprofile_BActionPerformed
@@ -283,6 +288,10 @@ public class User_ReceiptView extends javax.swing.JFrame {
     private void hone_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hone_BActionPerformed
         setVisible(false);
     }//GEN-LAST:event_hone_BActionPerformed
+
+    private void download_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_download_BActionPerformed
+
+    }//GEN-LAST:event_download_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -337,7 +346,7 @@ public class User_ReceiptView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton appoinment_B;
     private javax.swing.JLabel d_L;
-    private javax.swing.JLabel d_L1;
+    private javax.swing.JLabel d_L2;
     private javax.swing.JButton download_B;
     private javax.swing.JButton download_B1;
     private javax.swing.JLabel home_L;

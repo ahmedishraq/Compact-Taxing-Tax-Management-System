@@ -5,6 +5,7 @@
 package View;
 
 import Controller.UserHomeController;
+import Controller.UserReceiptController;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -12,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class User_DocumentsView extends javax.swing.JFrame {
+public class User_PaymentView extends javax.swing.JFrame {
 
     /**
      * Creates new form User_HomeView
      */
-    public User_DocumentsView() {
+    public User_PaymentView() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Home");
@@ -48,16 +49,13 @@ public class User_DocumentsView extends javax.swing.JFrame {
         title2_L = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         username_L = new javax.swing.JLabel();
-        salary_L = new javax.swing.JLabel();
-        s_upload_B = new javax.swing.JButton();
-        bank_L2 = new javax.swing.JLabel();
-        b_upload_B2 = new javax.swing.JButton();
-        chalan_L3 = new javax.swing.JLabel();
-        c_upload_B3 = new javax.swing.JButton();
-        i_L = new javax.swing.JLabel();
-        i_upload_B = new javax.swing.JButton();
-        a_L = new javax.swing.JLabel();
-        a_upload_B = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -183,58 +181,34 @@ public class User_DocumentsView extends javax.swing.JFrame {
         username_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         username_L.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        salary_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        salary_L.setText("Salary Certificate");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("Make Payment  01xxxxxxxxx");
 
-        s_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        s_upload_B.setText("Upload");
-        s_upload_B.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton1.setText("bKash");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("Transfer Payment in 42xxxxx");
+
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton2.setText("Visa Card");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setText("Paid in Cash");
+
+        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton3.setText("Pay");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                s_upload_BActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
-        bank_L2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        bank_L2.setText("Bank Statement");
-
-        b_upload_B2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        b_upload_B2.setText("Upload");
-        b_upload_B2.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton4.setText("Download e-Acknowledgement Receipt");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_upload_B2ActionPerformed(evt);
-            }
-        });
-
-        chalan_L3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        chalan_L3.setText("Chalan Copy");
-
-        c_upload_B3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        c_upload_B3.setText("Upload");
-        c_upload_B3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                c_upload_B3ActionPerformed(evt);
-            }
-        });
-
-        i_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        i_L.setText("Invesment Statement");
-
-        i_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        i_upload_B.setText("Upload");
-        i_upload_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                i_upload_BActionPerformed(evt);
-            }
-        });
-
-        a_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        a_L.setText("Assets Statement");
-
-        a_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        a_upload_B.setText("Upload");
-        a_upload_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                a_upload_BActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
 
@@ -250,32 +224,38 @@ public class User_DocumentsView extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(10, 10, 10))
-                                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(64, 64, 64))
-                            .addGroup(layout.createSequentialGroup()
+                                .addGap(96, 96, 96)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(chalan_L3)
-                                    .addComponent(salary_L)
-                                    .addComponent(bank_L2)
-                                    .addComponent(i_L)
-                                    .addComponent(a_L))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton1))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton3)))
+                                .addGap(125, 125, 125))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(s_upload_B)
-                                    .addComponent(b_upload_B2)
-                                    .addComponent(c_upload_B3)
-                                    .addComponent(i_upload_B)
-                                    .addComponent(a_upload_B))
-                                .addGap(186, 186, 186))))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(10, 10, 10))
+                                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(64, 64, 64))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jButton4)
+                                        .addGap(220, 220, 220))))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -294,27 +274,21 @@ public class User_DocumentsView extends javax.swing.JFrame {
                             .addComponent(username_L, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(101, 101, 101)
+                        .addGap(69, 69, 69)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(salary_L)
-                            .addComponent(s_upload_B))
-                        .addGap(41, 41, 41)
+                            .addComponent(jLabel1)
+                            .addComponent(jButton1))
+                        .addGap(96, 96, 96)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(i_L)
-                            .addComponent(i_upload_B))
-                        .addGap(42, 42, 42)
+                            .addComponent(jLabel2)
+                            .addComponent(jButton2))
+                        .addGap(98, 98, 98)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(bank_L2)
-                            .addComponent(b_upload_B2))
-                        .addGap(46, 46, 46)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(a_L)
-                            .addComponent(a_upload_B))
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(chalan_L3)
-                            .addComponent(c_upload_B3))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLabel3)
+                            .addComponent(jButton3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4)
+                        .addGap(86, 86, 86))))
         );
 
         pack();
@@ -343,34 +317,18 @@ public class User_DocumentsView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_logout_BActionPerformed
 
-    private void s_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s_upload_BActionPerformed
-        JFileChooser j1 = new JFileChooser();
-        j1.showSaveDialog(null);
-    }//GEN-LAST:event_s_upload_BActionPerformed
-
-    private void b_upload_B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_upload_B2ActionPerformed
-        JFileChooser j3 = new JFileChooser();
-        j3.showSaveDialog(null);
-    }//GEN-LAST:event_b_upload_B2ActionPerformed
-
-    private void c_upload_B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_upload_B3ActionPerformed
-        JFileChooser j5 = new JFileChooser();
-        j5.showSaveDialog(null);
-    }//GEN-LAST:event_c_upload_B3ActionPerformed
-
     private void hone_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hone_BActionPerformed
         setVisible(false);
     }//GEN-LAST:event_hone_BActionPerformed
 
-    private void i_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_i_upload_BActionPerformed
-        JFileChooser j2 = new JFileChooser();
-        j2.showSaveDialog(null);
-    }//GEN-LAST:event_i_upload_BActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        UserReceiptController rc = new UserReceiptController();
+        rc.open();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void a_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a_upload_BActionPerformed
-        JFileChooser j4 = new JFileChooser();
-        j4.showSaveDialog(null);
-    }//GEN-LAST:event_a_upload_BActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -389,37 +347,66 @@ public class User_DocumentsView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_PaymentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_PaymentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_PaymentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_PaymentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new User_DocumentsView().setVisible(true);
+                new User_PaymentView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel a_L;
-    private javax.swing.JButton a_upload_B;
     private javax.swing.JButton appoinment_B;
-    private javax.swing.JButton b_upload_B2;
-    private javax.swing.JLabel bank_L2;
-    private javax.swing.JButton c_upload_B3;
-    private javax.swing.JLabel chalan_L3;
     private javax.swing.JLabel home_L;
     private javax.swing.JButton hone_B;
-    private javax.swing.JLabel i_L;
-    private javax.swing.JButton i_upload_B;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
@@ -429,8 +416,6 @@ public class User_DocumentsView extends javax.swing.JFrame {
     private javax.swing.JButton myprofile_B;
     private javax.swing.JButton payment_B;
     private javax.swing.JButton receipt_B;
-    private javax.swing.JButton s_upload_B;
-    private javax.swing.JLabel salary_L;
     private javax.swing.JLabel title2_L;
     private javax.swing.JLabel title_L;
     private javax.swing.JLabel username_L;

@@ -4,7 +4,7 @@
  */
 package View;
 
-import Controller.HomeController;
+import Controller.UserHomeController;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -268,7 +268,7 @@ public class User_AppoinmentView extends javax.swing.JFrame {
 
     private void myprofile_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myprofile_BActionPerformed
         // TODO add your handling code here:
-        HomeController profile = new HomeController();
+        UserHomeController profile = new UserHomeController();
         profile.open();
         //setVisible(false);
     }//GEN-LAST:event_myprofile_BActionPerformed

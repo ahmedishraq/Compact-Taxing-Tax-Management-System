@@ -56,7 +56,7 @@
                                       <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="d_L1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="d_L2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="download_B1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
@@ -95,7 +95,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="d_L1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="d_L2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="download_B1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -321,8 +321,11 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Download"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="download_BActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="d_L1">
+    <Component class="javax.swing.JLabel" name="d_L2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="18" style="0"/>

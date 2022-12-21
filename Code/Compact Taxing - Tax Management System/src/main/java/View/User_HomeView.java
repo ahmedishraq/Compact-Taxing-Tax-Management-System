@@ -4,9 +4,11 @@
  */
 package View;
 
-import Controller.HomeController;
+import Controller.UserHomeController;
 import Controller.UserAppoinmentController;
 import Controller.UserDocumentsController;
+import Controller.UserPaymentController;
+import Controller.UserReceiptController;
 import javax.swing.JOptionPane;
 
 /**
@@ -135,6 +137,11 @@ public class User_HomeView extends javax.swing.JFrame {
 
         payment_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         payment_B.setText("Payment");
+        payment_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                payment_BActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -219,14 +226,13 @@ public class User_HomeView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void myprofile_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myprofile_BActionPerformed
-        // TODO add your handling code here:
-        HomeController profile = new HomeController();
+        UserHomeController profile = new UserHomeController();
         profile.open();
-        //setVisible(false);
     }//GEN-LAST:event_myprofile_BActionPerformed
 
     private void receipt_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_receipt_BActionPerformed
-        // TODO add your handling code here:
+        UserReceiptController rc = new UserReceiptController();
+        rc.open();
     }//GEN-LAST:event_receipt_BActionPerformed
 
     private void logout_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_BActionPerformed
@@ -250,6 +256,11 @@ public class User_HomeView extends javax.swing.JFrame {
        UserAppoinmentController app = new UserAppoinmentController();
        app.open();
     }//GEN-LAST:event_appoinment_BActionPerformed
+
+    private void payment_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payment_BActionPerformed
+       UserPaymentController pay = new UserPaymentController();
+       pay.open();
+    }//GEN-LAST:event_payment_BActionPerformed
 
     /**
      * @param args the command line arguments

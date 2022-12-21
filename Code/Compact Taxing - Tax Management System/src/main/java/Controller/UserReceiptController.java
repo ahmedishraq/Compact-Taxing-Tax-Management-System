@@ -4,16 +4,19 @@
  */
 package Controller;
 
+import View.User_AppoinmentView;
+import View.User_DocumentsView;
 import View.User_ProfileView;
+import View.User_ReceiptView;
 
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class HomeController {
+public class UserReceiptController {
     public boolean open(){
-        User_ProfileView profile = new User_ProfileView();
-        profile.setVisible(true);
+        User_ReceiptView rc = new User_ReceiptView();
+        rc.setVisible(true);
         return true;
     }
 }
