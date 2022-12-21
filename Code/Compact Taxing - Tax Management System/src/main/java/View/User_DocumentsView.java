@@ -5,19 +5,19 @@
 package View;
 
 import Controller.HomeController;
-import Controller.UserDocumentsController;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class User_HomeView extends javax.swing.JFrame {
+public class User_DocumentsView extends javax.swing.JFrame {
 
     /**
      * Creates new form User_HomeView
      */
-    public User_HomeView() {
+    public User_DocumentsView() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Home");
@@ -38,6 +38,7 @@ public class User_HomeView extends javax.swing.JFrame {
         home_L = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         logout_B = new javax.swing.JButton();
+        hone_B = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         myprofile_B = new javax.swing.JButton();
         mydoc_B = new javax.swing.JButton();
@@ -47,6 +48,12 @@ public class User_HomeView extends javax.swing.JFrame {
         title2_L = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         username_L = new javax.swing.JLabel();
+        salary_L = new javax.swing.JLabel();
+        s_upload_B = new javax.swing.JButton();
+        bank_L2 = new javax.swing.JLabel();
+        b_upload_B2 = new javax.swing.JButton();
+        chalan_L3 = new javax.swing.JLabel();
+        c_upload_B3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,6 +73,13 @@ public class User_HomeView extends javax.swing.JFrame {
             }
         });
 
+        hone_B.setText("Home");
+        hone_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hone_BActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -79,6 +93,8 @@ public class User_HomeView extends javax.swing.JFrame {
                             .addGap(13, 13, 13)
                             .addComponent(home_L)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(hone_B)
+                            .addGap(18, 18, 18)
                             .addComponent(logout_B)
                             .addGap(19, 19, 19)))
                     .addComponent(title_L, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -92,7 +108,8 @@ public class User_HomeView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(home_L)
-                    .addComponent(logout_B))
+                    .addComponent(logout_B)
+                    .addComponent(hone_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(33, Short.MAX_VALUE))
@@ -110,11 +127,6 @@ public class User_HomeView extends javax.swing.JFrame {
 
         mydoc_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mydoc_B.setText("My Documents");
-        mydoc_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mydoc_BActionPerformed(evt);
-            }
-        });
 
         appoinment_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         appoinment_B.setText("Appoinment");
@@ -167,6 +179,39 @@ public class User_HomeView extends javax.swing.JFrame {
         username_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         username_L.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        salary_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        salary_L.setText("Salary Certificate");
+
+        s_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        s_upload_B.setText("Upload");
+        s_upload_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                s_upload_BActionPerformed(evt);
+            }
+        });
+
+        bank_L2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        bank_L2.setText("Bank Statement");
+
+        b_upload_B2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        b_upload_B2.setText("Upload");
+        b_upload_B2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_upload_B2ActionPerformed(evt);
+            }
+        });
+
+        chalan_L3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        chalan_L3.setText("Chalan Copy");
+
+        c_upload_B3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        c_upload_B3.setText("Upload");
+        c_upload_B3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_upload_B3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -180,14 +225,31 @@ public class User_HomeView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10))
-                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(64, 64, 64))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10))
+                                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(64, 64, 64))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(salary_L)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(s_upload_B))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(bank_L2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(b_upload_B2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(chalan_L3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(c_upload_B3)))
+                                .addGap(195, 195, 195))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,6 +268,18 @@ public class User_HomeView extends javax.swing.JFrame {
                             .addComponent(username_L, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(101, 101, 101)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(salary_L)
+                            .addComponent(s_upload_B))
+                        .addGap(101, 101, 101)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(bank_L2)
+                            .addComponent(b_upload_B2))
+                        .addGap(101, 101, 101)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(chalan_L3)
+                            .addComponent(c_upload_B3))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -235,10 +309,22 @@ public class User_HomeView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_logout_BActionPerformed
 
-    private void mydoc_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mydoc_BActionPerformed
-       UserDocumentsController doc = new UserDocumentsController();
-       doc.open();
-    }//GEN-LAST:event_mydoc_BActionPerformed
+    private void s_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s_upload_BActionPerformed
+        JFileChooser j = new JFileChooser();
+        j.showSaveDialog(null);
+    }//GEN-LAST:event_s_upload_BActionPerformed
+
+    private void b_upload_B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_upload_B2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_upload_B2ActionPerformed
+
+    private void c_upload_B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_upload_B3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_c_upload_B3ActionPerformed
+
+    private void hone_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hone_BActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_hone_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -257,27 +343,33 @@ public class User_HomeView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_DocumentsView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new User_HomeView().setVisible(true);
+                new User_DocumentsView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton appoinment_B;
+    private javax.swing.JButton b_upload_B2;
+    private javax.swing.JLabel bank_L2;
+    private javax.swing.JButton c_upload_B3;
+    private javax.swing.JLabel chalan_L3;
     private javax.swing.JLabel home_L;
+    private javax.swing.JButton hone_B;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
@@ -287,6 +379,8 @@ public class User_HomeView extends javax.swing.JFrame {
     private javax.swing.JButton myprofile_B;
     private javax.swing.JButton payment_B;
     private javax.swing.JButton receipt_B;
+    private javax.swing.JButton s_upload_B;
+    private javax.swing.JLabel salary_L;
     private javax.swing.JLabel title2_L;
     private javax.swing.JLabel title_L;
     private javax.swing.JLabel username_L;
