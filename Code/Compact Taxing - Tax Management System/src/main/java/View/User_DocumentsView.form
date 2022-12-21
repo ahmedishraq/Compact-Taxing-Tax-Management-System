@@ -46,25 +46,23 @@
                               </Group>
                               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="salary_L" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="s_upload_B" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="bank_L2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="b_upload_B2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="chalan_L3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="c_upload_B3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="chalan_L3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="salary_L" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bank_L2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="i_L" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="a_L" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="195" pref="195" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="s_upload_B" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="b_upload_B2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="c_upload_B3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="i_upload_B" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="a_upload_B" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -96,12 +94,22 @@
                           <Component id="salary_L" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="s_upload_B" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="i_L" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="i_upload_B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="bank_L2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="b_upload_B2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="a_L" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="a_upload_B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="chalan_L3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="c_upload_B3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -369,6 +377,44 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="c_upload_B3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="i_L">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Invesment Statement"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="i_upload_B">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Upload"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="i_upload_BActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="a_L">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Assets Statement"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="a_upload_B">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Upload"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="a_upload_BActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

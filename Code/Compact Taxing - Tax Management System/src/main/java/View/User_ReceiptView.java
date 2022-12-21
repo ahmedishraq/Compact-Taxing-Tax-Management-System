@@ -5,20 +5,19 @@
 package View;
 
 import Controller.HomeController;
-import Controller.UserAppoinmentController;
-import Controller.UserDocumentsController;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author ahmed_ishraq <https://github.com/ahmedishraq>
  */
-public class User_HomeView extends javax.swing.JFrame {
+public class User_ReceiptView extends javax.swing.JFrame {
 
     /**
      * Creates new form User_HomeView
      */
-    public User_HomeView() {
+    public User_ReceiptView() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Home");
@@ -39,6 +38,7 @@ public class User_HomeView extends javax.swing.JFrame {
         home_L = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         logout_B = new javax.swing.JButton();
+        hone_B = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         myprofile_B = new javax.swing.JButton();
         mydoc_B = new javax.swing.JButton();
@@ -48,6 +48,10 @@ public class User_HomeView extends javax.swing.JFrame {
         title2_L = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         username_L = new javax.swing.JLabel();
+        d_L = new javax.swing.JLabel();
+        download_B = new javax.swing.JButton();
+        d_L1 = new javax.swing.JLabel();
+        download_B1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +71,13 @@ public class User_HomeView extends javax.swing.JFrame {
             }
         });
 
+        hone_B.setText("Home");
+        hone_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hone_BActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -80,6 +91,8 @@ public class User_HomeView extends javax.swing.JFrame {
                             .addGap(13, 13, 13)
                             .addComponent(home_L)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(hone_B)
+                            .addGap(18, 18, 18)
                             .addComponent(logout_B)
                             .addGap(19, 19, 19)))
                     .addComponent(title_L, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -93,7 +106,8 @@ public class User_HomeView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(home_L)
-                    .addComponent(logout_B))
+                    .addComponent(logout_B)
+                    .addComponent(hone_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(33, Short.MAX_VALUE))
@@ -111,19 +125,9 @@ public class User_HomeView extends javax.swing.JFrame {
 
         mydoc_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mydoc_B.setText("My Documents");
-        mydoc_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mydoc_BActionPerformed(evt);
-            }
-        });
 
         appoinment_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         appoinment_B.setText("Appoinment");
-        appoinment_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appoinment_BActionPerformed(evt);
-            }
-        });
 
         receipt_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         receipt_B.setText("Receipt\n");
@@ -173,6 +177,18 @@ public class User_HomeView extends javax.swing.JFrame {
         username_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         username_L.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        d_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        d_L.setText("Download Receipt");
+
+        download_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        download_B.setText("Download");
+
+        d_L1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        d_L1.setText("Acknowledgement Receipt");
+
+        download_B1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        download_B1.setText("Download");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -185,15 +201,30 @@ public class User_HomeView extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10))
-                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(64, 64, 64))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(username_L, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(title2_L, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10))
+                                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(64, 64, 64))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(117, 117, 117)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(d_L)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(download_B)
+                                        .addGap(171, 171, 171))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(d_L1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(download_B1)
+                                        .addGap(171, 171, 171))))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,6 +243,14 @@ public class User_HomeView extends javax.swing.JFrame {
                             .addComponent(username_L, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(128, 128, 128)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(d_L)
+                            .addComponent(download_B))
+                        .addGap(128, 128, 128)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(d_L1)
+                            .addComponent(download_B1))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -241,15 +280,9 @@ public class User_HomeView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_logout_BActionPerformed
 
-    private void mydoc_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mydoc_BActionPerformed
-       UserDocumentsController doc = new UserDocumentsController();
-       doc.open();
-    }//GEN-LAST:event_mydoc_BActionPerformed
-
-    private void appoinment_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appoinment_BActionPerformed
-       UserAppoinmentController app = new UserAppoinmentController();
-       app.open();
-    }//GEN-LAST:event_appoinment_BActionPerformed
+    private void hone_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hone_BActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_hone_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,27 +301,47 @@ public class User_HomeView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_ReceiptView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_ReceiptView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_ReceiptView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(User_HomeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(User_ReceiptView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new User_HomeView().setVisible(true);
+                new User_ReceiptView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton appoinment_B;
+    private javax.swing.JLabel d_L;
+    private javax.swing.JLabel d_L1;
+    private javax.swing.JButton download_B;
+    private javax.swing.JButton download_B1;
     private javax.swing.JLabel home_L;
+    private javax.swing.JButton hone_B;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;

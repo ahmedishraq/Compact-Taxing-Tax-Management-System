@@ -54,6 +54,10 @@ public class User_DocumentsView extends javax.swing.JFrame {
         b_upload_B2 = new javax.swing.JButton();
         chalan_L3 = new javax.swing.JLabel();
         c_upload_B3 = new javax.swing.JButton();
+        i_L = new javax.swing.JLabel();
+        i_upload_B = new javax.swing.JButton();
+        a_L = new javax.swing.JLabel();
+        a_upload_B = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -212,6 +216,28 @@ public class User_DocumentsView extends javax.swing.JFrame {
             }
         });
 
+        i_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        i_L.setText("Invesment Statement");
+
+        i_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        i_upload_B.setText("Upload");
+        i_upload_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                i_upload_BActionPerformed(evt);
+            }
+        });
+
+        a_L.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        a_L.setText("Assets Statement");
+
+        a_upload_B.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        a_upload_B.setText("Upload");
+        a_upload_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                a_upload_BActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -237,19 +263,19 @@ public class User_DocumentsView extends javax.swing.JFrame {
                                 .addGap(64, 64, 64))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(salary_L)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(s_upload_B))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(bank_L2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(b_upload_B2))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(chalan_L3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(c_upload_B3)))
-                                .addGap(195, 195, 195))))))
+                                    .addComponent(chalan_L3)
+                                    .addComponent(salary_L)
+                                    .addComponent(bank_L2)
+                                    .addComponent(i_L)
+                                    .addComponent(a_L))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(s_upload_B)
+                                    .addComponent(b_upload_B2)
+                                    .addComponent(c_upload_B3)
+                                    .addComponent(i_upload_B)
+                                    .addComponent(a_upload_B))
+                                .addGap(186, 186, 186))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,11 +298,19 @@ public class User_DocumentsView extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(salary_L)
                             .addComponent(s_upload_B))
-                        .addGap(101, 101, 101)
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(i_L)
+                            .addComponent(i_upload_B))
+                        .addGap(42, 42, 42)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(bank_L2)
                             .addComponent(b_upload_B2))
-                        .addGap(101, 101, 101)
+                        .addGap(46, 46, 46)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(a_L)
+                            .addComponent(a_upload_B))
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(chalan_L3)
                             .addComponent(c_upload_B3))
@@ -310,21 +344,33 @@ public class User_DocumentsView extends javax.swing.JFrame {
     }//GEN-LAST:event_logout_BActionPerformed
 
     private void s_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s_upload_BActionPerformed
-        JFileChooser j = new JFileChooser();
-        j.showSaveDialog(null);
+        JFileChooser j1 = new JFileChooser();
+        j1.showSaveDialog(null);
     }//GEN-LAST:event_s_upload_BActionPerformed
 
     private void b_upload_B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_upload_B2ActionPerformed
-        // TODO add your handling code here:
+        JFileChooser j3 = new JFileChooser();
+        j3.showSaveDialog(null);
     }//GEN-LAST:event_b_upload_B2ActionPerformed
 
     private void c_upload_B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_upload_B3ActionPerformed
-        // TODO add your handling code here:
+        JFileChooser j5 = new JFileChooser();
+        j5.showSaveDialog(null);
     }//GEN-LAST:event_c_upload_B3ActionPerformed
 
     private void hone_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hone_BActionPerformed
         setVisible(false);
     }//GEN-LAST:event_hone_BActionPerformed
+
+    private void i_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_i_upload_BActionPerformed
+        JFileChooser j2 = new JFileChooser();
+        j2.showSaveDialog(null);
+    }//GEN-LAST:event_i_upload_BActionPerformed
+
+    private void a_upload_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a_upload_BActionPerformed
+        JFileChooser j4 = new JFileChooser();
+        j4.showSaveDialog(null);
+    }//GEN-LAST:event_a_upload_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -363,6 +409,8 @@ public class User_DocumentsView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel a_L;
+    private javax.swing.JButton a_upload_B;
     private javax.swing.JButton appoinment_B;
     private javax.swing.JButton b_upload_B2;
     private javax.swing.JLabel bank_L2;
@@ -370,6 +418,8 @@ public class User_DocumentsView extends javax.swing.JFrame {
     private javax.swing.JLabel chalan_L3;
     private javax.swing.JLabel home_L;
     private javax.swing.JButton hone_B;
+    private javax.swing.JLabel i_L;
+    private javax.swing.JButton i_upload_B;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
