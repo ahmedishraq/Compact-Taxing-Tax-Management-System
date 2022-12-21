@@ -21,7 +21,7 @@ public class User_PaymentView extends javax.swing.JFrame {
     public User_PaymentView() {
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Home");
+        setTitle("Payment Portal");
         username_L.setText("Hi Ishraq,");
     }
 
@@ -66,7 +66,7 @@ public class User_PaymentView extends javax.swing.JFrame {
         title_L.setText("Compact Taxing");
 
         home_L.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        home_L.setText("Home");
+        home_L.setText("Payment Portal");
 
         logout_B.setText("Logout");
         logout_B.addActionListener(new java.awt.event.ActionListener() {

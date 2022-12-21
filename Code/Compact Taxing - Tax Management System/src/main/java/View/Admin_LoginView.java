@@ -21,7 +21,7 @@ public class Admin_LoginView extends javax.swing.JFrame {
     public Admin_LoginView() {
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Login");
+        setTitle(" Admin Login");
     }
 
     /**

@@ -19,7 +19,7 @@ public class Admin_TaxCalculationView1 extends javax.swing.JFrame {
     public Admin_TaxCalculationView1() {
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Profile");
+        setTitle("Tax Calculation Portal");
     }
     
     
@@ -101,7 +101,7 @@ public class Admin_TaxCalculationView1 extends javax.swing.JFrame {
         title_L.setText("Compact Taxing");
 
         profile_L.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        profile_L.setText("My Profile");
+        profile_L.setText("Tax Calculation Portal");
 
         logout_B.setText("Logout");
         logout_B.addActionListener(new java.awt.event.ActionListener() {

@@ -20,7 +20,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
     public Admin_HomeView() {
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Home");
+        setTitle("Admin Home");
         username_L.setText("Hi Admin,");
     }
 
