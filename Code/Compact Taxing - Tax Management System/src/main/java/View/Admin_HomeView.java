@@ -57,7 +57,7 @@ public class Admin_HomeView extends javax.swing.JFrame {
         title_L.setText("Compact Taxing");
 
         home_L.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        home_L.setText("Home");
+        home_L.setText("Admin Home");
 
         logout_B.setText("Logout");
         logout_B.addActionListener(new java.awt.event.ActionListener() {

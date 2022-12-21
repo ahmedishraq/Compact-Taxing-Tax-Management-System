@@ -18,7 +18,7 @@ public class LoginControllerTest {
     public void loginSuccessfull() {
         System.out.println("Login Protal Testing");
         final String id = "ishraq";
-        final String pass = "12345";
+        final String pass = "1234";
         LoginController loginTest = new LoginController();
         boolean expResult = true;
         boolean result = loginTest.login(id,pass);
